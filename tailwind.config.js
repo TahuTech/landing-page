@@ -1,10 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    'index.html',
-    './src/pages/projects.html',
-    './src/pages/collection.html',
-    './src/pages/servicelog.html'
+    './index.html',
+    './src/**/*.html'
   ],
   theme: {
       container:{
