@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/index.html',
-    './src/projects/kerf60.html'
+    'index.html',
+    '/src/projects/kerf60.html',
+    './src/**/*.html'
   ],
   theme: {
       container:{
