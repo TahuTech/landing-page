@@ -3,6 +3,7 @@ module.exports = {
   content: [
     'index.html',
     '/src/projects/kerf60.html',
+    '/src/pages/*.html',
     './src/**/*.html'
   ],
   theme: {
