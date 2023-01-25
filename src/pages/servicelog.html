@@ -1,89 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
+    <head>
+        <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Service Page</title>
         <link href="/dist/output.css" rel="stylesheet" />
+        <link rel="website icon" type="svg" href="/dist/img/tahutech-full.svg">
+    </head>
+    <body>
+        <!-- Header Start -->
+        <header class="bg-transparent absolute top-0 left-0 w-full flex
+            items-center z-10">
+            <div class="container">
+                <div class="flex items-center justify-between relative">
+                    <div class="px-4">
+                        <a href="/index.html" class="font-bold text-lg
+                            text-primary
+                            block py-6">TahuTech</a>
+                    </div>
+                    <div class="flex items-center px-4">
+                        <button id="hamburger" name="hamburger" type="button"
+                            class="block absolute right-4 lg:hidden">
+                            <span class="hamburger-line transition duration-300
+                                ease-in-out origin-top-left "></span>
+                            <span class="hamburger-line transition duration-300
+                                ease-in-out"></span>
+                            <span class="hamburger-line transition duration-300
+                                ease-in-out origin-bottom-left "></span>
+                        </button>
 
-</head>
-<body>
-    <!-- Header Start -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex
-    items-center z-10">
-    <div class="container">
-        <div class="flex items-center justify-between relative">
-            <div class="px-4">
-                <a href="/index.html" class="font-bold text-lg text-primary
-                    block py-6">TahuTech</a>
+                        <nav id="nav-menu" class="hidden absolute py-5
+                            bg-white shadow-lg max-w-[250px] w-full right-4
+                            top-full lg:block lg:static lg:bg-transparent
+                            lg:max-w-full lg:shadow-none lg:rounded-none">
+                            <ul class="block lg:flex">
+                                <li class="group">
+                                    <a href="/index.html#home " class="text-base
+                                        text-dark
+                                        py-2 mx-8 flex
+                                        group-hover:text-primary">Home</a>
+                                </li>
+                                <li class="group">
+                                    <a href="#price" class="text-base
+                                        text-dark
+                                        py-2 mx-8 flex
+                                        group-hover:text-primary">Price List
+                                    </a>
+                                </li>
+                                <li class="group">
+                                    <a href="#keyboard" class="text-base
+                                        text-dark
+                                        py-2 mx-8 flex
+                                        group-hover:text-primary">Keyboard Build</a>
+                                </li>
+                                <li class="group">
+                                    <a href="#mouse" class="text-base
+                                        text-dark
+                                        py-2 mx-8 flex
+                                        group-hover:text-primary">Mouse Repairs</a>
+                                </li>
+                                <li class="group">
+                                    <a href="#design" class="text-base
+                                        text-dark
+                                        py-2 mx-8 flex
+                                        group-hover:text-primary">Custom Design</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
-            <div class="flex items-center px-4">
-                <button id="hamburger" name="hamburger" type="button"
-                    class="block absolute right-4 lg:hidden">
-                    <span class="hamburger-line transition duration-300
-                        ease-in-out origin-top-left "></span>
-                    <span class="hamburger-line transition duration-300
-                        ease-in-out"></span>
-                    <span class="hamburger-line transition duration-300
-                        ease-in-out origin-bottom-left "></span>
-                </button>
+        </header>
+        <!-- Header end -->
 
-                <nav id="nav-menu" class="hidden absolute py-5
-                    bg-white shadow-lg max-w-[250px] w-full right-4
-                    top-full lg:block lg:static lg:bg-transparent
-                    lg:max-w-full lg:shadow-none lg:rounded-none">
-                    <ul class="block lg:flex">
-                        <li class="group">
-                            <a href="/index.html#home " class="text-base text-dark
-                                py-2 mx-8 flex
-                                group-hover:text-primary">Home</a>
-                        </li>
-                        <li class="group">
-                            <a href="#price" class="text-base
-                                text-dark
-                                py-2 mx-8 flex
-                                group-hover:text-primary">Price List
-                            </a>
-                        </li>
-                        <li class="group">
-                            <a href="#keyboard" class="text-base
-                                text-dark
-                                py-2 mx-8 flex
-                                group-hover:text-primary">Keyboard Build</a>
-                        </li>
-                        <li class="group">
-                            <a href="#mouse" class="text-base
-                                text-dark
-                                py-2 mx-8 flex
-                                group-hover:text-primary">Mouse Repairs</a>
-                        </li>
-                        <li class="group">
-                            <a href="#design" class="text-base
-                                text-dark
-                                py-2 mx-8 flex
-                                group-hover:text-primary">Custom Design</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+        <!-- Pricelist section start -->
+        <section id="price" class="pt-36">
+            <div class="container">
+            <section class="py-6  text-dark">
+                <div class="container mx-auto p-4 sm:p-10">
+                    <div class="mb-16 space-y-4 text-center">
+                        <h1 class="text-4xl font-semibold leading-tight">Pricing</h1>
+                        <p class="px-4 sm:px-8 lg:px-24">This pricelist how much money you spend for use my service. for something reason it will be changed..</p>
+                    </div>
+                    <div class="grid max-w-md grid-cols-1 gap-6 mx-auto auto-rows-fr
+                        lg:max-w-full lg:gap-2 xl:gap-6 lg:grid-cols-3">
+                        <div class="relative z-0 flex flex-col items-center p-8
+                            border-2 dark:border-primary rounded-md">
+                            <span class="absolute top-0 px-6 pt-1 pb-2 font-medium
+                                rounded-b-lg dark:bg-primary  dark:text-dark">Keyboard Build</span>
+                            <p class="my-6 text-4xl font-bold  dark:text-dark">Price</p>
+                            <ul class="flex-1 space-y-2">
+                                <li class="flex items-center space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" class="w-6 h-6
+                                        dark:text-primary">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0
+                                            001.946-.806 3.42 3.42 0 014.438 0 3.42
+                                            3.42 0 001.946.806 3.42 3.42 0 013.138
+                                            3.138 3.42 3.42 0 00.806 1.946 3.42 3.42
+                                            0 010 4.438 3.42 3.42 0 00-.806 1.946
+                                            3.42 3.42 0 01-3.138 3.138 3.42 3.42 0
+                                            00-1.946.806 3.42 3.42 0 01-4.438 0 3.42
+                                            3.42 0 00-1.946-.806 3.42 3.42 0
+                                            01-3.138-3.138 3.42 3.42 0 00-.806-1.946
+                                            3.42 3.42 0 010-4.438 3.42 3.42 0
+                                            00.806-1.946 3.42 3.42 0
+                                            013.138-3.138z"></path>
+                                    </svg>
+                                    <span>Solder Switch</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" class="w-6 h-6
+                                        dark:text-primary">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0
+                                            001.946-.806 3.42 3.42 0 014.438 0 3.42
+                                            3.42 0 001.946.806 3.42 3.42 0 013.138
+                                            3.138 3.42 3.42 0 00.806 1.946 3.42 3.42
+                                            0 010 4.438 3.42 3.42 0 00-.806 1.946
+                                            3.42 3.42 0 01-3.138 3.138 3.42 3.42 0
+                                            00-1.946.806 3.42 3.42 0 01-4.438 0 3.42
+                                            3.42 0 00-1.946-.806 3.42 3.42 0
+                                            01-3.138-3.138 3.42 3.42 0 00-.806-1.946
+                                            3.42 3.42 0 010-4.438 3.42 3.42 0
+                                            00.806-1.946 3.42 3.42 0
+                                            013.138-3.138z"></path>
+                                    </svg>
+                                    <span>Desolder Switch</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" class="w-6 h-6
+                                        dark:text-primary">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0
+                                            001.946-.806 3.42 3.42 0 014.438 0 3.42
+                                            3.42 0 001.946.806 3.42 3.42 0 013.138
+                                            3.138 3.42 3.42 0 00.806 1.946 3.42 3.42
+                                            0 010 4.438 3.42 3.42 0 00-.806 1.946
+                                            3.42 3.42 0 01-3.138 3.138 3.42 3.42 0
+                                            00-1.946.806 3.42 3.42 0 01-4.438 0 3.42
+                                            3.42 0 00-1.946-.806 3.42 3.42 0
+                                            01-3.138-3.138 3.42 3.42 0 00-.806-1.946
+                                            3.42 3.42 0 010-4.438 3.42 3.42 0
+                                            00.806-1.946 3.42 3.42 0
+                                            013.138-3.138z"></path>
+                                    </svg>
+                                    <span>Repairs PCB Problem</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" class="w-6 h-6
+                                        dark:text-primary">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0
+                                            001.946-.806 3.42 3.42 0 014.438 0 3.42
+                                            3.42 0 001.946.806 3.42 3.42 0 013.138
+                                            3.138 3.42 3.42 0 00.806 1.946 3.42 3.42
+                                            0 010 4.438 3.42 3.42 0 00-.806 1.946
+                                            3.42 3.42 0 01-3.138 3.138 3.42 3.42 0
+                                            00-1.946.806 3.42 3.42 0 01-4.438 0 3.42
+                                            3.42 0 00-1.946-.806 3.42 3.42 0
+                                            01-3.138-3.138 3.42 3.42 0 00-.806-1.946
+                                            3.42 3.42 0 010-4.438 3.42 3.42 0
+                                            00.806-1.946 3.42 3.42 0
+                                            013.138-3.138z"></path>
+                                    </svg>
+                                    <span>Jumper PCB </span>
+                                </li>
+                            </ul>
+                            <button class="px-4 py-2 mt-4 font-semibold uppercase
+                                border rounded-lg md:mt-12 sm:py-3 sm:px-8
+                                dark:border-primary dark:bg-primary">Subscribe</button>
+                        </div>
+                        <div class="relative flex flex-col items-center p-8 border-2
+                            rounded-md dark:border-primary dark:bg-white">
+                            <span class="absolute top-0 px-6 pt-1 pb-2 font-medium
+                                rounded-b-lg dark:bg-primary dark:text-gray-900">Mouse Service</span>
+                            <p class="flex items-center justify-center my-6
+                                space-x-2 font-bold">
+                                <span class="text-lg line-through
+                                    dark:text-gray-300">&nbsp;32€&nbsp;</span>
+                                <span class="pb-2 text-4xl">19€</span>
+                                <span class="text-lg">/mo</span>
+                            </p>
+                            <ul class="flex-1 space-y-2">
+                                <li class="flex items-center space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" class="w-6 h-6
+                                        dark:text-primary">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0
+                                            001.946-.806 3.42 3.42 0 014.438 0 3.42
+                                            3.42 0 001.946.806 3.42 3.42 0 013.138
+                                            3.138 3.42 3.42 0 00.806 1.946 3.42 3.42
+                                            0 010 4.438 3.42 3.42 0 00-.806 1.946
+                                            3.42 3.42 0 01-3.138 3.138 3.42 3.42 0
+                                            00-1.946.806 3.42 3.42 0 01-4.438 0 3.42
+                                            3.42 0 00-1.946-.806 3.42 3.42 0
+                                            01-3.138-3.138 3.42 3.42 0 00-.806-1.946
+                                            3.42 3.42 0 010-4.438 3.42 3.42 0
+                                            00.806-1.946 3.42 3.42 0
+                                            013.138-3.138z"></path>
+                                    </svg>
+                                    <span>Double Click Switch</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" class="w-6 h-6
+                                        dark:text-primary">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0
+                                            001.946-.806 3.42 3.42 0 014.438 0 3.42
+                                            3.42 0 001.946.806 3.42 3.42 0 013.138
+                                            3.138 3.42 3.42 0 00.806 1.946 3.42 3.42
+                                            0 010 4.438 3.42 3.42 0 00-.806 1.946
+                                            3.42 3.42 0 01-3.138 3.138 3.42 3.42 0
+                                            00-1.946.806 3.42 3.42 0 01-4.438 0 3.42
+                                            3.42 0 00-1.946-.806 3.42 3.42 0
+                                            01-3.138-3.138 3.42 3.42 0 00-.806-1.946
+                                            3.42 3.42 0 010-4.438 3.42 3.42 0
+                                            00.806-1.946 3.42 3.42 0
+                                            013.138-3.138z"></path>
+                                    </svg>
+                                    <span>Error Scroll Encoder</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" class="w-6 h-6
+                                        dark:text-primary">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0
+                                            001.946-.806 3.42 3.42 0 014.438 0 3.42
+                                            3.42 0 001.946.806 3.42 3.42 0 013.138
+                                            3.138 3.42 3.42 0 00.806 1.946 3.42 3.42
+                                            0 010 4.438 3.42 3.42 0 00-.806 1.946
+                                            3.42 3.42 0 01-3.138 3.138 3.42 3.42 0
+                                            00-1.946.806 3.42 3.42 0 01-4.438 0 3.42
+                                            3.42 0 00-1.946-.806 3.42 3.42 0
+                                            01-3.138-3.138 3.42 3.42 0 00-.806-1.946
+                                            3.42 3.42 0 010-4.438 3.42 3.42 0
+                                            00.806-1.946 3.42 3.42 0
+                                            013.138-3.138z"></path>
+                                    </svg>
+                                    <span>Change Battery</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" class="w-6 h-6
+                                        dark:text-primary">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0
+                                            001.946-.806 3.42 3.42 0 014.438 0 3.42
+                                            3.42 0 001.946.806 3.42 3.42 0 013.138
+                                            3.138 3.42 3.42 0 00.806 1.946 3.42 3.42
+                                            0 010 4.438 3.42 3.42 0 00-.806 1.946
+                                            3.42 3.42 0 01-3.138 3.138 3.42 3.42 0
+                                            00-1.946.806 3.42 3.42 0 01-4.438 0 3.42
+                                            3.42 0 00-1.946-.806 3.42 3.42 0
+                                            01-3.138-3.138 3.42 3.42 0 00-.806-1.946
+                                            3.42 3.42 0 010-4.438 3.42 3.42 0
+                                            00.806-1.946 3.42 3.42 0
+                                            013.138-3.138z"></path>
+                                    </svg>
+                                    <span>Hotswap Mod on Switch</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" class="w-6 h-6
+                                        dark:text-primary">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0
+                                            001.946-.806 3.42 3.42 0 014.438 0 3.42
+                                            3.42 0 001.946.806 3.42 3.42 0 013.138
+                                            3.138 3.42 3.42 0 00.806 1.946 3.42 3.42
+                                            0 010 4.438 3.42 3.42 0 00-.806 1.946
+                                            3.42 3.42 0 01-3.138 3.138 3.42 3.42 0
+                                            00-1.946.806 3.42 3.42 0 01-4.438 0 3.42
+                                            3.42 0 00-1.946-.806 3.42 3.42 0
+                                            01-3.138-3.138 3.42 3.42 0 00-.806-1.946
+                                            3.42 3.42 0 010-4.438 3.42 3.42 0
+                                            00.806-1.946 3.42 3.42 0
+                                            013.138-3.138z"></path>
+                                    </svg>
+                                    <span>Deep Cleaning Mouse</span>
+                                </li>
+                            </ul>
+                            <button class="px-8 py-3 mt-12 text-lg font-semibold
+                                uppercase rounded dark:bg-primary
+                                dark:text-gray-900">Subscribe</button>
+                        </div>
+                        <div class="relative z-0 flex flex-col items-center p-8
+                            border-2 dark:border-primary rounded-md dark:white">
+                            <span class="absolute top-0 px-6 pt-1 pb-2 font-medium
+                                rounded-b-lg dark:bg-primary dark:text-gray-900">Custom Design</span>
+                            <p class="flex items-center justify-center my-6
+                                space-x-2 font-bold">
+                                <span class="text-lg line-through
+                                    dark:text-gray-300">&nbsp;49€&nbsp;</span>
+                                <span class="pb-2 text-4xl">37€</span>
+                                <span class="text-lg">/mo</span>
+                            </p>
+                            <ul class="flex-1 space-y-2">
+                                <li class="flex items-center space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" class="w-6 h-6
+                                        dark:text-primary">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0
+                                            001.946-.806 3.42 3.42 0 014.438 0 3.42
+                                            3.42 0 001.946.806 3.42 3.42 0 013.138
+                                            3.138 3.42 3.42 0 00.806 1.946 3.42 3.42
+                                            0 010 4.438 3.42 3.42 0 00-.806 1.946
+                                            3.42 3.42 0 01-3.138 3.138 3.42 3.42 0
+                                            00-1.946.806 3.42 3.42 0 01-4.438 0 3.42
+                                            3.42 0 00-1.946-.806 3.42 3.42 0
+                                            01-3.138-3.138 3.42 3.42 0 00-.806-1.946
+                                            3.42 3.42 0 010-4.438 3.42 3.42 0
+                                            00.806-1.946 3.42 3.42 0
+                                            013.138-3.138z"></path>
+                                    </svg>
+                                    <span>Acrylic Case</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" class="w-6 h-6
+                                        dark:text-primary">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0
+                                            001.946-.806 3.42 3.42 0 014.438 0 3.42
+                                            3.42 0 001.946.806 3.42 3.42 0 013.138
+                                            3.138 3.42 3.42 0 00.806 1.946 3.42 3.42
+                                            0 010 4.438 3.42 3.42 0 00-.806 1.946
+                                            3.42 3.42 0 01-3.138 3.138 3.42 3.42 0
+                                            00-1.946.806 3.42 3.42 0 01-4.438 0 3.42
+                                            3.42 0 00-1.946-.806 3.42 3.42 0
+                                            01-3.138-3.138 3.42 3.42 0 00-.806-1.946
+                                            3.42 3.42 0 010-4.438 3.42 3.42 0
+                                            00.806-1.946 3.42 3.42 0
+                                            013.138-3.138z"></path>
+                                    </svg>
+                                    <span>Custom Case</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" class="w-6 h-6
+                                        dark:text-primary">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0
+                                            001.946-.806 3.42 3.42 0 014.438 0 3.42
+                                            3.42 0 001.946.806 3.42 3.42 0 013.138
+                                            3.138 3.42 3.42 0 00.806 1.946 3.42 3.42
+                                            0 010 4.438 3.42 3.42 0 00-.806 1.946
+                                            3.42 3.42 0 01-3.138 3.138 3.42 3.42 0
+                                            00-1.946.806 3.42 3.42 0 01-4.438 0 3.42
+                                            3.42 0 00-1.946-.806 3.42 3.42 0
+                                            01-3.138-3.138 3.42 3.42 0 00-.806-1.946
+                                            3.42 3.42 0 010-4.438 3.42 3.42 0
+                                            00.806-1.946 3.42 3.42 0
+                                            013.138-3.138z"></path>
+                                    </svg>
+                                    <span>One Off Design</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" class="w-6 h-6
+                                        dark:text-primary">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0
+                                            001.946-.806 3.42 3.42 0 014.438 0 3.42
+                                            3.42 0 001.946.806 3.42 3.42 0 013.138
+                                            3.138 3.42 3.42 0 00.806 1.946 3.42 3.42
+                                            0 010 4.438 3.42 3.42 0 00-.806 1.946
+                                            3.42 3.42 0 01-3.138 3.138 3.42 3.42 0
+                                            00-1.946.806 3.42 3.42 0 01-4.438 0 3.42
+                                            3.42 0 00-1.946-.806 3.42 3.42 0
+                                            01-3.138-3.138 3.42 3.42 0 00-.806-1.946
+                                            3.42 3.42 0 010-4.438 3.42 3.42 0
+                                            00.806-1.946 3.42 3.42 0
+                                            013.138-3.138z"></path>
+                                    </svg>
+                                    <span>Design Case Acrylic</span>
+                                </li>
+                            </ul>
+                            <button class="px-8 py-3 mt-12 text-lg font-semibold
+                                uppercase border rounded dark:border-primary dark:bg-primary">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
-</header>
-<!-- Header end -->
+</section>
+        <!-- Pricelist section end -->
 
-<!-- Pricelist section start -->
-    
-<!-- Pricelist section end -->
+        <!-- Keyboards build section start -->
+        <!-- keyboards build section end -->
 
-<!-- Keyboards build section start -->
-<!-- keyboards build section end -->
+        <!-- Mouse Repair section start -->
+        <!-- Mouse Repair section end -->
 
-<!-- Mouse Repair section start -->
-<!-- Mouse Repair section end -->
+        <!-- Custom Design section start -->
+        <!-- Custom Design section end -->
 
-<!-- Custom Design section start -->
-<!-- Custom Design section end -->
-
-</body>
+    </body>
 </html>
